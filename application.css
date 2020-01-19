@@ -1,0 +1,21 @@
+* {
+  font-family: "Roboto", sans-serif; }
+
+.site {
+  width: 80%;
+  margin: auto; }
+
+.title {
+  width: 50px; }
+  .title:before {
+    content: "";
+    border: 1px solid;
+    width: 90px;
+    height: 72px;
+    position: absolute; }
+
+.carousel-cell {
+  margin: 0 auto;
+  width: 100%; }
+
+/*# sourceMappingURL=application.css.map */
