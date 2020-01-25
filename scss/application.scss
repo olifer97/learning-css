@@ -8,17 +8,37 @@
 }
 
 .title {
-  width: 50px;
+  width: 90px;
   &:before {
     content: "";
     border: 1px solid;
     width: 90px;
     height: 72px;
     position: absolute;
+    animation: spin 20s linear infinite;
+    transition: margin-left ease 300ms;
   }
 }
 
 .carousel-cell {
   margin: 0 auto;
   width: 100%;
+}
+
+@keyframes spin {
+  0% { 
+    transform: rotateZ(0deg); 
+  }
+  10% {
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.title:hover {
+  &:before {
+    margin-left: 66px; //animation and transition in same property doesn't work
+  }
 }
